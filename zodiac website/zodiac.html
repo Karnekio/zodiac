@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знаки Зодіаку</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-image: url('46992.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-color: white;
+        }
+
+        .zodiac-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 650px;
+        }
+
+        .zodiac {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        .zodiac img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+        .zodiac .description {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .zodiac:hover .description {
+            opacity: 1;
+        }
+
+        .icons-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+            max-width: 300px;
+            margin: 30px auto;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .zodiac:hover ~ .icons-container {
+            opacity: 1;
+        }
+        .icon:nth-child(1) { grid-column: 1; grid-row: 1; }
+        .icon:nth-child(2) { grid-column: 2; grid-row: 2; }
+        .icon:nth-child(3) { grid-column: 3; grid-row: 3; }
+        .icon:nth-child(4) { grid-column: 4; grid-row: 4; }
+
+        /* Стилізація іконок */
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+        .icons img {
+         margin-top: 20px; 
+}
+    </style>
+</head>
+<body>
+    <h1>Знаки Зодіаку</h1>
+    <div class="zodiac-container">
+        <div class="zodiac">
+            <img src="zodiac aries.jpg" alt="Овен">
+            <div class="description">♈ Овен (21 березня – 19 квітня) – рішучий, енергійний.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac (1 bull).jpg" alt="Телець">
+            <div class="description">♉ Телець (20 квітня – 20 травня) – терплячий, надійний.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac gemini.jpg" alt="Близнюки">
+            <div class="description">♊ Близнюки (21 травня – 20 червня) – комунікабельні, допитливі.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac cancer.jpg" alt="Рак">
+            <div class="description">♋ Рак (21 червня – 22 липня) – емоційний, турботливий.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac leo.jpg" alt="Лев">
+            <div class="description">♌ Лев (23 липня – 22 серпня) – впевнений, амбітний.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac virgo.jpg" alt="Діва">
+            <div class="description">♍ Діва (23 серпня – 22 вересня) – уважна, педантична.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac libra.jpg" alt="Терези">
+            <div class="description">♎ Терези (23 вересня – 22 жовтня) – гармонійні, дипломатичні.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac scorpio.jpg" alt="Скорпіон">
+            <div class="description">♏ Скорпіон (23 жовтня – 21 листопада) – пристрасний, рішучий.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac sagittarius.jpg" alt="Стрілець">
+            <div class="description">♐ Стрілець (22 листопада – 21 грудня) – оптимістичний, активний.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac capricorn.jpg" alt="Козеріг">
+            <div class="description">♑ Козеріг (22 грудня – 19 січня) – амбітний, дисциплінований.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac aquarius.jpg" alt="Водолій">
+            <div class="description">♒ Водолій (20 січня – 18 лютого) – незалежний, винахідливий.</div>
+        </div>
+        <div class="zodiac">
+            <img src="zodiac pisces.jpg" alt="Риби">
+            <div class="description">♓ Риби (19 лютого – 20 березня) – мрійливі, інтуїтивні.</div>
+        </div>
+    </div>
+
+    <!-- Контейнер з іконками -->
+    <div class="icons-container">
+        <img class="icon" src="icon.png" alt="Іконка 1">
+        <img class="icon" src="icon.png" alt="Іконка 2">
+        <img class="icon" src="icon.png" alt="Іконка 3">
+        <img class="icon" src="icon.png" alt="Іконка 4">
+    </div>
+</body>
+</html>
+
+
+ 
